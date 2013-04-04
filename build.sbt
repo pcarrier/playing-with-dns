@@ -4,7 +4,9 @@ version := "1.0"
 
 scalaVersion := "2.10.1"
 
+resolvers += "Akka snapshots" at "http://repo.akka.io/snapshots/"
+
 libraryDependencies ++= Seq(
   "org.littleshoot" % "dnsjava" % "2.1.3",
-  "io.netty" % "netty-all" % "4.0.0.CR1",
+  "com.typesafe.akka" %% "akka-actor" % "2.2-SNAPSHOT"
 )
